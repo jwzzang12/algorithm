@@ -4,7 +4,7 @@
  */
   let newNums = []
 
-var getConcatenation = function(nums) {
- newNums = nums.concat(nums);
-return newNums
+var getConcatenation = function (nums) {
+  newNums = nums.concat(nums);
+  return newNums;
 };

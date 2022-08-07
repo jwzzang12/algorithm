@@ -7,4 +7,5 @@
 var getConcatenation = function (nums) {
   newNums = nums.concat(nums);
   return newNums;
+  //return [...nums, ...nums]
 };

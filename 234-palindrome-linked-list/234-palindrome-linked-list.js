@@ -16,11 +16,16 @@ const isPalindrome = function (head) {
     head = head.next;
   }
 
-  let left = 0;
-  let right = arr.length - 1;
-  while (left <= right) {
-    if (arr[left] !== arr[right]) return false;
-    left++, right--;
-  }
-  return true;
+  // let left = 0;
+  // let right = arr.length - 1;
+  // while (left <= right) {
+  //   if (arr[left] !== arr[right]) return false;
+  //   left++, right--;
+  // }
+  // return true;
+  const str = arr.join("");
+  const reverse = arr.reverse().join("");
+  if (str == reverse) {
+    return true;
+  } else return false;
 };
